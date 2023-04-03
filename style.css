@@ -71,7 +71,7 @@ body {
   margin-right: 10px;
   text-decoration: underline;
 }
-.desc {
+.desc ul.text{
   font-size: 12px;
 }
 .details {
