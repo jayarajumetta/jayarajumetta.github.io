@@ -164,16 +164,18 @@
       color: var(--text-color);
     }
     
+    
+
     /* Experience & Education Styles */
     .timeline {
       position: relative;
-      padding-left: 30px;
+      padding-left: 40px;
     }
     
     .timeline:before {
       content: '';
       position: absolute;
-      left: 7px;
+      left: 15px;
       top: 0;
       bottom: 0;
       width: 2px;
@@ -191,7 +193,7 @@
     
     .timeline-dot {
       position: absolute;
-      left: 0;
+      left: 8px; /* Adjusted from 0 to better align with the line */
       top: 5px;
       width: 16px;
       height: 16px;
@@ -199,12 +201,14 @@
       background-color: var(--secondary-color);
       border: 3px solid white;
       box-shadow: 0 0 0 2px var(--secondary-color);
+      z-index: 1; /* Ensures dot stays above the line */
     }
-    
+        
     .timeline-date {
       font-size: 0.9rem;
       color: var(--text-light);
       margin-bottom: 0.3rem;
+      padding-left: 10px; /* Added padding to prevent text from getting too close to dot */
     }
     
     .timeline-title {
