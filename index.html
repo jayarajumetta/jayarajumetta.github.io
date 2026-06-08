@@ -1,11 +1,9 @@
-Here is the final, recruiter-optimized, visually stunning HTML resume for a Test Automation Architect. It highlights primary automation skills, AI/ML expertise, cloud-native architecture, and impactful projects — with no mention of AST.
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Jayaraju Metta | Test Automation Architect · AI/ML · Cloud-Native QA</title>
+  <title>Jayaraju Metta | Test Automation Architect – AI/ML • Cloud Native</title>
   <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/909/909212.png">
   <!-- Google Fonts + Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
@@ -18,42 +16,42 @@ Here is the final, recruiter-optimized, visually stunning HTML resume for a Test
     }
 
     body {
-      background: radial-gradient(circle at 10% 30%, #e9f0f5, #dfe6ef);
+      background: linear-gradient(145deg, #eef2f8 0%, #e0e7f0 100%);
       font-family: 'Inter', sans-serif;
-      color: #142433;
+      color: #0f172a;
       line-height: 1.45;
       padding: 2rem 1.5rem;
     }
 
-    /* Master container */
-    .master-resume {
-      max-width: 1300px;
+    /* main container */
+    .resume-ultimate {
+      max-width: 1320px;
       margin: 0 auto;
-      background-color: #ffffff;
-      border-radius: 2.5rem;
-      box-shadow: 0 30px 50px -20px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 0, 0, 0.02);
+      background: #ffffff;
+      border-radius: 2rem;
+      box-shadow: 0 30px 50px -20px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(0, 0, 0, 0.02);
       overflow: hidden;
       transition: all 0.2s;
     }
 
-    /* Two-column flex */
-    .resume-grid {
+    /* two column layout */
+    .ultimate-grid {
       display: grid;
-      grid-template-columns: 300px 1fr;
+      grid-template-columns: 320px 1fr;
     }
 
-    /* ========= SIDEBAR – modern dark ========= */
-    .profile-sidebar {
+    /* ========= SIDEBAR (premium dark) ========= */
+    .sidebar-premium {
       background: #0f172a;
       color: #e2e8f0;
-      padding: 2rem 1.5rem;
+      padding: 2rem 1.6rem;
       position: relative;
-      border-right: 1px solid #1e2f44;
+      border-right: 1px solid #1e2a3e;
     }
 
-    .avatar-wrapper {
+    .avatar-section {
       text-align: center;
-      margin-bottom: 1.6rem;
+      margin-bottom: 1.8rem;
     }
     .avatar-img {
       width: 140px;
@@ -61,22 +59,23 @@ Here is the final, recruiter-optimized, visually stunning HTML resume for a Test
       object-fit: cover;
       border-radius: 50%;
       border: 3px solid #3b82f6;
-      box-shadow: 0 12px 25px -8px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 12px 24px -10px rgba(0, 0, 0, 0.4);
+      transition: transform 0.2s;
     }
-    .fullname {
+    .fullname-glow {
       font-size: 1.7rem;
       font-weight: 800;
       letter-spacing: -0.02em;
-      background: linear-gradient(135deg, #fff, #9ca3af);
+      background: linear-gradient(135deg, #ffffff, #94a3b8);
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
-      margin: 0.6rem 0 0.2rem;
+      margin: 0.8rem 0 0.2rem;
     }
-    .title-badge {
-      background: rgba(59,130,246,0.2);
+    .role-tag-modern {
+      background: rgba(59,130,246,0.18);
       border: 1px solid rgba(59,130,246,0.4);
-      padding: 0.3rem 1rem;
+      padding: 0.25rem 1rem;
       border-radius: 60px;
       font-size: 0.7rem;
       font-weight: 600;
@@ -85,7 +84,7 @@ Here is the final, recruiter-optimized, visually stunning HTML resume for a Test
       margin-bottom: 1.5rem;
     }
 
-    .side-section-title {
+    .side-head {
       font-size: 0.7rem;
       text-transform: uppercase;
       letter-spacing: 1px;
@@ -96,7 +95,7 @@ Here is the final, recruiter-optimized, visually stunning HTML resume for a Test
       padding-left: 10px;
     }
 
-    .contact-line {
+    .contact-row {
       display: flex;
       align-items: center;
       gap: 12px;
@@ -105,84 +104,87 @@ Here is the final, recruiter-optimized, visually stunning HTML resume for a Test
       color: #cbd5e1;
       word-break: break-word;
     }
-    .contact-line i {
+    .contact-row i {
       width: 20px;
       color: #3b82f6;
     }
 
-    .skill-pills {
+    /* skills pills – consistent font with main content */
+    .skills-pills {
       display: flex;
       flex-wrap: wrap;
       gap: 0.6rem;
       margin-top: 0.3rem;
     }
-    .pill {
+    .pill-skill {
       background: #1e293b;
       border-radius: 40px;
-      padding: 0.25rem 1rem;
+      padding: 0.3rem 1rem;
       font-size: 0.7rem;
       font-weight: 500;
-      font-family: monospace;
+      font-family: 'Inter', monospace;
       color: #b9e6ff;
       border: 1px solid #334155;
+      transition: 0.1s;
     }
-    .pill.primary {
+    .pill-skill.primary-automation {
       background: #0b2b38;
       border-color: #3b82f6;
       color: #b9f2ff;
+      font-weight: 600;
     }
-    .pill.ai-cloud {
+    .pill-skill.ai-cloud {
       background: #0a1e2c;
       border-color: #38bdf8;
     }
 
-    /* ========= MAIN CONTENT ========= */
-    .main-area {
+    /* ========= MAIN CONTENT (consistent font) ========= */
+    .main-content-premium {
       background: #ffffff;
       padding: 2rem 2.2rem;
     }
 
-    .hero-summary {
-      background: linear-gradient(105deg, #f8fafc, #ffffff);
+    .summary-card {
+      background: linear-gradient(115deg, #f8fafc, #ffffff);
       border-radius: 1.5rem;
       padding: 1.5rem 1.8rem;
       margin-bottom: 2rem;
       border: 1px solid #eef2ff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
     }
 
-    .section-header {
+    .section-header-clean {
       display: flex;
       align-items: center;
       gap: 12px;
       margin-bottom: 1.2rem;
     }
-    .section-header i {
+    .section-header-clean i {
       font-size: 1.4rem;
       color: #1e40af;
       background: #e0f2fe;
       padding: 8px;
       border-radius: 14px;
     }
-    .section-header h2 {
+    .section-header-clean h2 {
       font-size: 1.3rem;
       font-weight: 700;
       color: #0c4a6e;
     }
 
-    /* Impact metrics row */
-    .metric-row {
+    /* metrics */
+    .metrics-row {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 1rem;
       margin: 1.5rem 0 2rem;
     }
-    .metric-card {
+    .metric-card-modern {
       background: #ffffff;
       border-radius: 1rem;
       padding: 0.9rem;
       border: 1px solid #e9edf2;
       box-shadow: 0 1px 2px rgba(0,0,0,0.02);
-      text-align: left;
     }
     .metric-number {
       font-size: 1.7rem;
@@ -195,8 +197,8 @@ Here is the final, recruiter-optimized, visually stunning HTML resume for a Test
       color: #4b5563;
     }
 
-    /* Experience */
-    .exp-block {
+    /* experience items */
+    .exp-item-modern {
       border-left: 3px solid #3b82f6;
       padding-left: 1.2rem;
       margin-bottom: 1.8rem;
@@ -229,43 +231,42 @@ Here is the final, recruiter-optimized, visually stunning HTML resume for a Test
       margin-bottom: 0.4rem;
     }
 
-    /* Project cards */
-    .project-showcase {
+    /* project cards (interesting QA automation projects) */
+    .project-grid-ultimate {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
       gap: 1.2rem;
       margin: 1.5rem 0;
     }
-    .project-card-modern {
+    .project-card-ultimate {
       background: #fefefe;
       border-radius: 1.2rem;
       border: 1px solid #eef2ff;
       padding: 1.2rem;
-      transition: all 0.2s;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+      transition: all 0.25s;
     }
-    .project-card-modern:hover {
+    .project-card-ultimate:hover {
       border-color: #3b82f6;
-      transform: translateY(-3px);
-      box-shadow: 0 15px 25px -12px rgba(59,130,246,0.15);
+      transform: translateY(-4px);
+      box-shadow: 0 18px 28px -12px rgba(59,130,246,0.2);
     }
-    .project-icon {
+    .project-icon-lg {
       font-size: 1.8rem;
       color: #2563eb;
       margin-bottom: 0.4rem;
     }
-    .project-name {
+    .project-title {
       font-weight: 800;
       font-size: 1rem;
       margin-bottom: 0.3rem;
     }
-    .tech-strip {
+    .tech-stack {
       display: flex;
       flex-wrap: wrap;
       gap: 0.4rem;
       margin: 0.6rem 0;
     }
-    .tech-strip span {
+    .tech-stack span {
       background: #eef2ff;
       font-size: 0.65rem;
       padding: 0.2rem 0.6rem;
@@ -279,7 +280,8 @@ Here is the final, recruiter-optimized, visually stunning HTML resume for a Test
       height: 1px;
       background: #e9edf2;
     }
-    .footer-note {
+
+    .footer-note-premium {
       font-size: 0.7rem;
       text-align: center;
       margin-top: 1.8rem;
@@ -288,31 +290,36 @@ Here is the final, recruiter-optimized, visually stunning HTML resume for a Test
       border-top: 1px solid #ecf3fa;
     }
 
-    @media (max-width: 850px) {
-      .resume-grid {
+    @media (max-width: 880px) {
+      .ultimate-grid {
         grid-template-columns: 1fr;
       }
-      .profile-sidebar {
+      .sidebar-premium {
         border-right: none;
         border-bottom: 1px solid #2d3a4e;
       }
       body {
         padding: 1rem;
       }
-      .main-area {
+      .main-content-premium {
         padding: 1.5rem;
       }
     }
+
     @media print {
       body {
         background: white;
         padding: 0;
       }
-      .profile-sidebar {
+      .sidebar-premium {
         background: #0f172a !important;
         -webkit-print-color-adjust: exact;
       }
+      .project-card-ultimate:hover {
+        transform: none;
+      }
     }
+
     a {
       color: #93c5fd;
       text-decoration: none;
@@ -320,154 +327,152 @@ Here is the final, recruiter-optimized, visually stunning HTML resume for a Test
   </style>
 </head>
 <body>
-<div class="master-resume">
-  <div class="resume-grid">
-    <!-- SIDEBAR: Skills + Contact -->
-    <aside class="profile-sidebar">
-      <div class="avatar-wrapper">
+<div class="resume-ultimate">
+  <div class="ultimate-grid">
+    <!-- Sidebar: consistent fonts & skills -->
+    <aside class="sidebar-premium">
+      <div class="avatar-section">
         <img class="avatar-img" src="./logo/profile.jpeg" alt="Jayaraju Metta" onerror="this.src='https://ui-avatars.com/api/?background=0F172A&color=3B82F6&name=Jayaraju+Metta&size=140';">
-        <div class="fullname">Jayaraju Metta</div>
-        <div class="title-badge"><i class="fas fa-microchip"></i> Test Automation Architect · AI/ML</div>
+        <div class="fullname-glow">Jayaraju Metta</div>
+        <div class="role-tag-modern"><i class="fas fa-microchip"></i> Test Automation Architect · AI/ML</div>
       </div>
 
       <div>
-        <div class="side-section-title">CONTACT</div>
-        <div class="contact-line"><i class="fas fa-envelope"></i> jayaraju.metta@gmail.com</div>
-        <div class="contact-line"><i class="fas fa-phone-alt"></i> +91-9247924729</div>
-        <div class="contact-line"><i class="fab fa-linkedin"></i> linkedin.com/in/jayarajumetta</div>
-        <div class="contact-line"><i class="fab fa-github"></i> github.com/jayarajumetta</div>
+        <div class="side-head">CONTACT</div>
+        <div class="contact-row"><i class="fas fa-envelope"></i> jayaraju.metta@gmail.com</div>
+        <div class="contact-row"><i class="fas fa-phone-alt"></i> +91-9247924729</div>
+        <div class="contact-row"><i class="fab fa-linkedin"></i> linkedin.com/in/jayarajumetta</div>
+        <div class="contact-row"><i class="fab fa-github"></i> github.com/jayarajumetta</div>
       </div>
 
       <div>
-        <div class="side-section-title">⚡ PRIMARY AUTOMATION SKILLS</div>
-        <div class="skill-pills">
-          <span class="pill primary"><i class="fab fa-python"></i> Python (Certified)</span>
-          <span class="pill primary"><i class="fas fa-code"></i> C# · Java</span>
-          <span class="pill primary"><i class="fas fa-check-circle"></i> Playwright · Selenium</span>
-          <span class="pill primary"><i class="fas fa-plug"></i> API Testing (RestAssured/Postman)</span>
-          <span class="pill primary"><i class="fas fa-vial"></i> BDD · TDD · Cucumber</span>
-          <span class="pill primary"><i class="fas fa-cogs"></i> Tricentis Tosca · Cypress</span>
+        <div class="side-head">⚡ PRIMARY AUTOMATION SKILLS</div>
+        <div class="skills-pills">
+          <span class="pill-skill primary-automation"><i class="fab fa-python"></i> Python (Certified)</span>
+          <span class="pill-skill primary-automation"><i class="fas fa-code"></i> C# · Java · TS</span>
+          <span class="pill-skill primary-automation">Playwright · Selenium</span>
+          <span class="pill-skill primary-automation">API (RestAssured/Postman)</span>
+          <span class="pill-skill primary-automation">BDD · Cucumber · TDD</span>
+          <span class="pill-skill primary-automation">Tricentis Tosca · Cypress</span>
         </div>
       </div>
 
       <div>
-        <div class="side-section-title">🤖 AI/ML & CLOUD NATIVE</div>
-        <div class="skill-pills">
-          <span class="pill ai-cloud"><i class="fas fa-brain"></i> RAG Systems · LLMs</span>
-          <span class="pill ai-cloud"><i class="fas fa-robot"></i> Prompt Engineering</span>
-          <span class="pill ai-cloud"><i class="fab fa-docker"></i> Docker · K8s</span>
-          <span class="pill ai-cloud"><i class="fab fa-aws"></i> AWS (EC2, Lambda, S3)</span>
-          <span class="pill ai-cloud">CI/CD · Azure DevOps</span>
+        <div class="side-head">🤖 AI/ML & CLOUD NATIVE</div>
+        <div class="skills-pills">
+          <span class="pill-skill ai-cloud"><i class="fas fa-brain"></i> RAG · LLMs</span>
+          <span class="pill-skill ai-cloud"><i class="fas fa-robot"></i> Prompt Engineering</span>
+          <span class="pill-skill ai-cloud"><i class="fab fa-docker"></i> Docker · Kubernetes</span>
+          <span class="pill-skill ai-cloud"><i class="fab fa-aws"></i> AWS (EC2, Lambda)</span>
+          <span class="pill-skill ai-cloud">CI/CD · Azure DevOps</span>
         </div>
       </div>
 
       <div>
-        <div class="side-section-title">📜 CERTIFICATIONS</div>
-        <div class="contact-line" style="font-size:0.7rem"><i class="fas fa-certificate"></i> Professional Scrum Master™ I (PSM I)</div>
-        <div class="contact-line" style="font-size:0.7rem"><i class="fas fa-code"></i> Certified Python Programming Specialist</div>
-        <div class="contact-line" style="font-size:0.7rem"><i class="fas fa-check"></i> Foundational C# with Microsoft</div>
-        <div class="contact-line" style="font-size:0.7rem"><i class="fas fa-cloud"></i> Tricentis Tosca Specialist</div>
-        <div class="contact-line" style="font-size:0.7rem"><i class="fas fa-graduation-cap"></i> AI & Data Science | IIT(ISM) Dhanbad</div>
+        <div class="side-head">📜 CERTIFICATIONS</div>
+        <div class="contact-row" style="font-size:0.7rem"><i class="fas fa-certificate"></i> Professional Scrum Master™ I (PSM I)</div>
+        <div class="contact-row" style="font-size:0.7rem"><i class="fas fa-check-circle"></i> Certified Python Programming Specialist</div>
+        <div class="contact-row" style="font-size:0.7rem"><i class="fas fa-code"></i> Foundational C# with Microsoft</div>
+        <div class="contact-row" style="font-size:0.7rem"><i class="fas fa-cloud"></i> Tricentis Tosca Specialist</div>
+        <div class="contact-row" style="font-size:0.7rem"><i class="fas fa-graduation-cap"></i> AI & Data Science | IIT(ISM) Dhanbad</div>
       </div>
     </aside>
 
-    <!-- MAIN: Experience, projects, AI outcomes -->
-    <main class="main-area">
-      <!-- Summary with key stats -->
-      <div class="hero-summary">
-        <p style="font-weight: 700; font-size: 0.95rem; margin-bottom: 0.5rem;">🏆 <strong>PSM Certified Agile Leader & Test Automation Architect</strong> (13+ years)</p>
-        <p style="font-size: 0.9rem;">Architecting <strong>enterprise automation workflows</strong> powered by <strong>Generative AI (RAG, LLMs)</strong> and cloud-native infrastructure. Expert in Python, C#, and modern AI/ML pipelines. Built scalable test solutions reducing regression cycles by 40%, accelerated release velocity by 30%, and integrated AWS/Docker to deliver high-quality, compliant software. Passionate about solving complex engineering challenges at the intersection of automation, AI, and DevOps.</p>
+    <!-- MAIN CONTENT: Impact, experience, projects -->
+    <main class="main-content-premium">
+      <div class="summary-card">
+        <p style="font-weight: 700; font-size: 0.95rem; margin-bottom: 0.4rem;">🔷 <strong>PSM Certified Agile Leader & Test Automation Architect</strong> (13+ years SDLC)</p>
+        <p style="font-size: 0.9rem;">Architecting <strong>enterprise automation workflows</strong> fueled by Generative AI (RAG, LLMs) and cloud-native infrastructure. Expert Python/C# developer building AI/ML pipelines for intelligent testing. Delivered 40% efficiency gain, 30% faster releases, and containerized parallel test execution. Known for bridging complex business systems with modern automation, driving quality at scale.</p>
       </div>
 
-      <!-- Measurable Impact -->
-      <div class="metric-row">
-        <div class="metric-card"><div class="metric-number">40%</div><div class="metric-label">↑ architectural efficiency via AI automation</div></div>
-        <div class="metric-card"><div class="metric-number">30%</div><div class="metric-label">faster time-to-market (ideyalabs)</div></div>
-        <div class="metric-card"><div class="metric-number">50+</div><div class="metric-label">enterprise test suites containerized</div></div>
-        <div class="metric-card"><div class="metric-number">13+</div><div class="metric-label">years SDLC & automation leadership</div></div>
+      <!-- Measurable outcomes (recruiter magnets) -->
+      <div class="metrics-row">
+        <div class="metric-card-modern"><div class="metric-number">40%</div><div class="metric-label">↑ architectural efficiency (AI automation)</div></div>
+        <div class="metric-card-modern"><div class="metric-number">30%</div><div class="metric-label">faster time-to-market (ideyalabs)</div></div>
+        <div class="metric-card-modern"><div class="metric-number">50+</div><div class="metric-label">test suites containerized with Docker</div></div>
+        <div class="metric-card-modern"><div class="metric-number">13+</div><div class="metric-label">years automation & architecture leadership</div></div>
       </div>
 
-      <!-- Professional Experience (highlighting key automation & AI) -->
-      <div class="section-header">
+      <!-- Experience -->
+      <div class="section-header-clean">
         <i class="fas fa-briefcase"></i>
-        <h2>Architect-Level Impact</h2>
+        <h2>Architect-Level Experience</h2>
       </div>
 
-      <div class="exp-block">
+      <div class="exp-item-modern">
         <div class="exp-date">Jul 2024 – Present</div>
         <div class="exp-title">Test Automation Architect</div>
         <div class="exp-company"><i class="fas fa-building"></i> Innovapptive – Hyderabad</div>
         <ul class="exp-list">
-          <li>Designed enterprise automation workflows using <strong>Python, RAG systems & LLMs</strong> within AWS, integrating prompt engineering to generate accurate AI responses — boosted architectural efficiency by <strong>40%</strong>.</li>
-          <li>Built scalable test tools and AI-driven automation capabilities for Enterprise Architecture org, collaborating closely with agile teams to enforce SDLC best practices.</li>
-          <li>Constructed complex automations that connect legacy systems with modern microservices, acting as primary technical resource for AI troubleshooting.</li>
+          <li>Designed and deployed enterprise automation workflows using <strong>Python, RAG systems & LLMs on AWS</strong>; integrated prompt engineering to generate accurate AI responses — boosted architectural efficiency by <strong>40%</strong>.</li>
+          <li>Built scalable test tools & AI-driven automation capabilities for Enterprise Architecture org, enforcing SDLC best practices in Agile environment.</li>
+          <li>Constructed complex automations bridging legacy systems with microservices, serving as primary technical resource for AI troubleshooting.</li>
         </ul>
       </div>
 
-      <div class="exp-block">
+      <div class="exp-item-modern">
         <div class="exp-date">Oct 2023 – Jun 2024</div>
         <div class="exp-title">Sr. Principal Test Automation Architect</div>
         <div class="exp-company"><i class="fas fa-microchip"></i> ideyalabs – Hyderabad</div>
         <ul class="exp-list">
-          <li>Built <strong>modern AI/ML pipelines</strong> supporting intelligent automation frameworks, specializing in prompt optimization and evaluation for GenAI models → accelerated time-to-market by 30%.</li>
-          <li>Delivered enterprise-grade SaaS solutions leveraging cloud services (AWS), data pipelines, and containerized test execution.</li>
-          <li>Led cross-functional technical direction, aligning complex automation strategies with business growth.</li>
+          <li>Developed <strong>modern AI/ML pipelines</strong> for intelligent automation, specializing in prompt optimization & GenAI evaluation → reduced time-to-market by <strong>30%</strong>.</li>
+          <li>Delivered enterprise SaaS solutions leveraging AWS, data pipelines and containerized test execution.</li>
+          <li>Led cross-functional technical strategy, aligning automation with high-growth business goals.</li>
         </ul>
       </div>
 
-      <div class="exp-block">
+      <div class="exp-item-modern">
         <div class="exp-date">Jan 2019 – Sept 2023</div>
         <div class="exp-title">Test Automation Architect (Qualitest / ZenQ)</div>
         <div class="exp-company"><i class="fas fa-car"></i> Mercedes-Benz R&D + Emirates NBD – Hyderabad</div>
         <ul class="exp-list">
-          <li><strong>Mercedes-Benz R&D:</strong> Architected Python + AWS test automation for EV routing algorithms, validating edge cases to reduce range anxiety in next-gen telematics.</li>
-          <li><strong>Emirates NBD:</strong> Led automation architecture for digital banking channels, building complex workflows for digital cheque processing and secure API endpoints.</li>
-          <li>Used <strong>Docker containerization</strong> to deploy parallel automation environments, cutting execution time by 50%.</li>
+          <li><strong>Mercedes-Benz R&D:</strong> Architected Python + AWS test automation for EV routing algorithms, validating 1500+ edge cases to reduce range anxiety in next-gen telematics.</li>
+          <li><strong>Emirates NBD:</strong> Led test automation architecture for digital banking channels (cheque processing, secure API endpoints) using Docker and parallel execution.</li>
+          <li>Implemented <strong>Docker containerization</strong> to orchestrate parallel automation environments, cutting execution time by 50%.</li>
         </ul>
       </div>
 
-      <div class="exp-block">
+      <div class="exp-item-modern">
         <div class="exp-date">Jul 2016 – Jan 2019</div>
         <div class="exp-title">Senior Software Analyst (QA Automation)</div>
         <div class="exp-company"><i class="fas fa-drafting-compass"></i> Hexagon R&D – Hyderabad</div>
         <ul class="exp-list">
-          <li>Applied engineering best practices to design test automation layers for Hexagon PPM & Fusion suites using Python & C#, integrated into Agile SDLC pipelines.</li>
+          <li>Engineered test automation layers for Hexagon PPM & Fusion using Python & C#, integrated into Agile SDLC pipelines.</li>
         </ul>
       </div>
 
-      <!-- INNOVATIVE PROJECTS IN QA AUTOMATION SPACE -->
-      <div class="section-header">
-        <i class="fas fa-rocket"></i>
-        <h2>Flagship Automation & AI Projects</h2>
+      <!-- Interesting QA Automation Projects -->
+      <div class="section-header-clean">
+        <i class="fas fa-flask"></i>
+        <h2>Flagship QA Automation & AI Projects</h2>
       </div>
-      <div class="project-showcase">
-        <div class="project-card-modern">
-          <div class="project-icon"><i class="fas fa-microchip"></i></div>
-          <div class="project-name">QAira – GenAI-Driven Automation Platform</div>
-          <div class="tech-strip"><span>RAG</span><span>LLM</span><span>Docker</span><span>AWS</span><span>Prompt Engineering</span></div>
-          <p style="font-size: 0.8rem;">Cloud-native platform integrating Generative AI and RAG systems to auto-generate test scripts, optimize regression suites, and provide intelligent test data synthesis. Built on modern SDLC with container orchestration.</p>
+      <div class="project-grid-ultimate">
+        <div class="project-card-ultimate">
+          <div class="project-icon-lg"><i class="fas fa-microchip"></i></div>
+          <div class="project-title">QAira – GenAI-Driven Automation Platform</div>
+          <div class="tech-stack"><span>RAG</span><span>LLM</span><span>Docker</span><span>AWS</span><span>Prompt Engineering</span></div>
+          <p style="font-size: 0.8rem;">Cloud-native platform leveraging Generative AI and RAG to auto-generate test scripts, optimize regression suites, and synthesize intelligent test data. Built with modern SDLC and container orchestration.</p>
         </div>
-        <div class="project-card-modern">
-          <div class="project-icon"><i class="fas fa-car-battery"></i></div>
-          <div class="project-name">EV Routing Validator (Mercedes-Benz)</div>
-          <div class="tech-strip"><span>Python</span><span>AWS Lambda</span><span>Selenium</span><span>IoT simulation</span></div>
-          <p style="font-size: 0.8rem;">Automated validation of 1500+ EV routing edge cases, leveraging cloud-based parallel execution to reduce range anxiety and improve telematics accuracy by 35%.</p>
+        <div class="project-card-ultimate">
+          <div class="project-icon-lg"><i class="fas fa-car-battery"></i></div>
+          <div class="project-title">EV Routing Telematics (Mercedes-Benz)</div>
+          <div class="tech-stack"><span>Python</span><span>AWS Lambda</span><span>Selenium Grid</span><span>IoT Simulation</span></div>
+          <p style="font-size: 0.8rem;">Automated validation of EV routing algorithms under extreme conditions, reducing range anxiety and improving telematics accuracy by 35% through cloud-based parallel execution.</p>
         </div>
-        <div class="project-card-modern">
-          <div class="project-icon"><i class="fas fa-university"></i></div>
-          <div class="project-name">Digital Cheque Processing (Emirates NBD)</div>
-          <div class="tech-strip"><span>API Automation</span><span>Docker</span><span>Jenkins</span><span>Cypress</span></div>
-          <p style="font-size: 0.8rem;">Architected end-to-end automation for high-security cheque transaction endpoints, reducing manual validation effort by 70% and ensuring PCI compliance.</p>
+        <div class="project-card-ultimate">
+          <div class="project-icon-lg"><i class="fas fa-university"></i></div>
+          <div class="project-title">Digital Cheque Processing (Emirates NBD)</div>
+          <div class="tech-stack"><span>API Automation</span><span>Docker</span><span>Jenkins</span><span>Cypress</span></div>
+          <p style="font-size: 0.8rem;">End-to-end automation for high-security cheque transaction endpoints, reducing manual effort by 70% and ensuring PCI compliance with robust test pipelines.</p>
         </div>
-        <div class="project-card-modern">
-          <div class="project-icon"><i class="fas fa-chart-line"></i></div>
-          <div class="project-name">LLM Prompt Optimizer Framework</div>
-          <div class="tech-strip"><span>LangChain</span><span>OpenAI API</span><span>CI/CD</span></div>
-          <p style="font-size: 0.8rem;">Developed internal framework for prompt evaluation and automated regression for LLM responses, used across 3 product lines to maintain GenAI output quality.</p>
+        <div class="project-card-ultimate">
+          <div class="project-icon-lg"><i class="fas fa-chart-line"></i></div>
+          <div class="project-title">LLM Prompt Optimizer Framework</div>
+          <div class="tech-stack"><span>LangChain</span><span>OpenAI API</span><span>Prompt Evaluation</span></div>
+          <p style="font-size: 0.8rem;">Internal framework for prompt regression testing and optimization across 3 product lines, ensuring GenAI output quality and reducing hallucination rates.</p>
         </div>
       </div>
 
-      <!-- Education & credentials -->
       <hr>
       <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-top: 0.5rem;">
         <div>
@@ -479,21 +484,20 @@ Here is the final, recruiter-optimized, visually stunning HTML resume for a Test
           </ul>
         </div>
         <div>
-          <h3 style="font-size: 0.9rem; font-weight: 800;"><i class="fas fa-award"></i> Core Methodologies</h3>
+          <h3 style="font-size: 0.9rem; font-weight: 800;"><i class="fas fa-award"></i> Methodologies & Tools</h3>
           <ul style="font-size: 0.8rem; list-style: none;">
-            <li>✅ Agile (PSM I) · Scrum · SAFe</li>
-            <li>✅ Shift-Left Testing · Service Virtualization</li>
-            <li>✅ DevOps + CI/CD · Infrastructure as Code</li>
+            <li>✅ Agile · PSM I · Scrum</li>
+            <li>✅ Shift-Left · Service Virtualization</li>
+            <li>✅ CI/CD · GitOps · Infrastructure as Code</li>
           </ul>
         </div>
       </div>
 
-      <div class="footer-note">
-        <i class="fas fa-chart-line"></i>  Architecting the future of intelligent test automation — AI-augmented, cloud-native, and built for scale.
+      <div class="footer-note-premium">
+        <i class="fas fa-chart-line"></i>  Architecting intelligent test automation at the intersection of AI, cloud, and enterprise quality.
       </div>
     </main>
   </div>
 </div>
 </body>
 </html>
-```
