@@ -1,15 +1,12 @@
-Here is an HTML document that redesigns the test automation architect profile with a modern, recruiter-focused UI, incorporating the requested AI agent skills and cloud expertise.
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>Jayaraju Metta | AI-Driven Test Architect · Cloud Native QA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Jayaraju Metta | Application Architect – Quality Engineering | AI + Cloud Native QA</title>
   <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/909/909212.png">
-  <!-- Google Fonts + Montserrat for headings -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <!-- Font Awesome 6 -->
+  <!-- Google Fonts: modern, crisp -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     * {
@@ -19,287 +16,276 @@ Here is an HTML document that redesigns the test automation architect profile wi
     }
 
     body {
-      background: linear-gradient(145deg, #eef2f5 0%, #e2e8f0 100%);
+      background: radial-gradient(circle at 10% 20%, #eef2ff, #e0e7f0);
       font-family: 'Inter', sans-serif;
-      color: #1e293b;
+      color: #0a1c2f;
       line-height: 1.45;
       padding: 2rem 1.5rem;
     }
 
-    /* main card container */
-    .profile-master {
+    /* Main premium container */
+    .premium-portfolio {
       max-width: 1400px;
       margin: 0 auto;
       background-color: #ffffff;
       border-radius: 2rem;
-      box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.25), 0 2px 5px rgba(0, 0, 0, 0.02);
+      box-shadow: 0 30px 50px -20px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(0, 0, 0, 0.02);
       overflow: hidden;
-      transition: all 0.2s ease;
+      transition: all 0.2s;
     }
 
-    /* two-column grid with expert asymmetric split */
-    .grid-architect {
+    /* Two-column flex with elegant spacing */
+    .architect-layout {
       display: grid;
-      grid-template-columns: 320px 1fr;
+      grid-template-columns: 330px 1fr;
     }
 
-    /* ========= SIDEBAR (DARK PROFESSIONAL) ========= */
-    .sidebar-dark {
+    /* ========= SIDEBAR – refined dark + accent ========= */
+    .premium-sidebar {
       background: #0f172a;
       color: #e2e8f0;
-      padding: 2rem 1.5rem;
+      padding: 2rem 1.6rem;
       position: relative;
-      backdrop-filter: blur(0px);
-      border-right: 1px solid rgba(56, 189, 248, 0.2);
+      border-right: 1px solid #1e2a3e;
     }
 
-    .avatar-frame {
+    .avatar-circle {
       text-align: center;
       margin-bottom: 1.8rem;
     }
-
-    .avatar-img {
+    .avatar-circle img {
       width: 140px;
       height: 140px;
       object-fit: cover;
       border-radius: 50%;
       border: 3px solid #38bdf8;
-      box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 15px 25px -10px rgba(0, 0, 0, 0.4);
       background: #1e293b;
     }
-
-    .name-xl {
-      font-size: 1.8rem;
-      font-weight: 700;
+    .display-name {
+      font-size: 1.7rem;
+      font-weight: 800;
       letter-spacing: -0.02em;
-      background: linear-gradient(135deg, #fff, #94a3b8);
+      background: linear-gradient(135deg, #ffffff, #94a3b8);
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
-      margin: 0.5rem 0 0.2rem;
+      margin: 0.8rem 0 0.3rem;
     }
-
-    .badge-role {
+    .architect-badge {
       display: inline-block;
-      background: rgba(56, 189, 248, 0.15);
-      backdrop-filter: blur(4px);
-      padding: 0.3rem 1rem;
-      border-radius: 40px;
-      font-size: 0.8rem;
-      font-weight: 500;
-      color: #7dd3fc;
+      background: rgba(56, 189, 248, 0.12);
       border: 1px solid rgba(56, 189, 248, 0.3);
+      padding: 0.25rem 1rem;
+      border-radius: 60px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #7dd3fc;
       margin-bottom: 1.5rem;
     }
 
-    .info-block h3, .skills-block h3 {
-      font-size: 1rem;
+    .side-section {
+      margin: 2rem 0 1.2rem;
+    }
+    .side-section h4 {
+      font-size: 0.8rem;
       text-transform: uppercase;
       letter-spacing: 1px;
-      font-weight: 600;
+      font-weight: 700;
       color: #7dd3fc;
-      margin: 1.8rem 0 1rem 0;
+      margin-bottom: 1rem;
       border-left: 3px solid #38bdf8;
-      padding-left: 12px;
+      padding-left: 10px;
     }
-
-    .contact-item-side {
+    .contact-line {
       display: flex;
       align-items: center;
       gap: 12px;
-      font-size: 0.85rem;
-      margin-bottom: 1rem;
-      color: #cbd5e1;
+      font-size: 0.8rem;
+      margin-bottom: 0.9rem;
+      color: #cbd5e6;
       word-break: break-word;
     }
-
-    .contact-item-side i {
+    .contact-line i {
       width: 22px;
       color: #38bdf8;
-      font-size: 1rem;
     }
 
-    .skill-cloud {
+    .skill-cluster {
       display: flex;
       flex-wrap: wrap;
       gap: 0.6rem;
       margin-top: 0.5rem;
     }
-
-    .skill-pill {
+    .skill-chip {
       background: #1e293b;
-      border-radius: 40px;
-      padding: 0.3rem 0.9rem;
-      font-size: 0.75rem;
+      border-radius: 30px;
+      padding: 0.3rem 1rem;
+      font-size: 0.7rem;
       font-weight: 500;
-      font-family: 'JetBrains Mono', monospace;
+      font-family: monospace;
       color: #b9e6ff;
       border: 1px solid #334155;
       transition: all 0.2s;
     }
-    .skill-pill.ai, .skill-pill.cloud {
-      background: #0f2c3b;
+    .skill-chip.ai, .skill-chip.cloud {
+      background: #0b2b38;
       border-color: #38bdf8;
-      color: #bae6fd;
+      color: #b9f2ff;
     }
-
-    /* ========= MAIN CONTENT (FRESH MODERN) ========= */
-    .main-content {
+    /* ========= MAIN CONTENT premium ========= */
+    .premium-main {
       background: #ffffff;
-      padding: 2rem 2.2rem;
+      padding: 2rem 2.5rem;
     }
 
-    .hero-summary {
-      background: #f8fafc;
+    /* Hero card AST alignment */
+    .hero-intro {
+      background: linear-gradient(115deg, #f8fafc 0%, #ffffff 100%);
       border-radius: 1.5rem;
       padding: 1.6rem 2rem;
       margin-bottom: 2rem;
-      border: 1px solid #eef2ff;
-      box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+      border: 1px solid #ecf3fa;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
     }
-
-    .section-header {
+    .section-icon-title {
       display: flex;
       align-items: center;
       gap: 12px;
       margin-bottom: 1.2rem;
     }
-    .section-header i {
+    .section-icon-title i {
       font-size: 1.5rem;
       color: #0f3b5c;
       background: #e0f2fe;
       padding: 8px;
-      border-radius: 14px;
+      border-radius: 16px;
     }
-    .section-header h2 {
+    .section-icon-title h2 {
       font-size: 1.4rem;
       font-weight: 700;
-      letter-spacing: -0.3px;
-      color: #0f172a;
+      color: #0c4a6e;
     }
 
-    /* RESPONSIBILITIES AST cards (Highest AST area) */
-    .ast-grid {
+    /* AST CARD GRID – highest responsibilities */
+    .ast-premium-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 1.2rem;
-      margin-bottom: 2.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 1.3rem;
+      margin: 1.8rem 0 2rem;
     }
-    .ast-card {
+    .ast-premium-card {
       background: #fefefe;
       border-radius: 1.2rem;
-      border: 1px solid #e9edf2;
-      padding: 1.2rem 1.2rem;
-      transition: 0.2s;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+      border: 1px solid #eef2ff;
+      padding: 1.3rem;
+      transition: all 0.25s;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
     }
-    .ast-card:hover {
+    .ast-premium-card:hover {
       border-color: #38bdf8;
-      box-shadow: 0 12px 20px -12px rgba(56,189,248,0.2);
-      transform: translateY(-2px);
+      transform: translateY(-3px);
+      box-shadow: 0 18px 28px -12px rgba(56, 189, 248, 0.2);
     }
-    .ast-icon {
-      font-size: 1.8rem;
+    .ast-icon-large {
+      font-size: 2rem;
       color: #0284c7;
       margin-bottom: 0.5rem;
     }
-    .ast-title {
+    .ast-card-title {
       font-weight: 800;
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       margin-bottom: 0.5rem;
-      color: #0f172a;
       display: flex;
       align-items: center;
       gap: 6px;
     }
-    .ast-desc {
-      font-size: 0.85rem;
-      color: #334155;
-      line-height: 1.4;
-    }
-
-    /* timeline / work */
-    .timeline-v2 {
-      display: flex;
-      flex-direction: column;
-      gap: 1.2rem;
-    }
-    .exp-entry {
-      border-left: 3px solid #38bdf8;
-      padding-left: 1.2rem;
-      margin-bottom: 0.8rem;
-    }
-    .exp-date {
-      font-size: 0.75rem;
-      font-weight: 600;
-      color: #0284c7;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-    .exp-title {
-      font-weight: 700;
-      font-size: 1rem;
-      margin: 0.3rem 0 0.2rem;
-    }
-    .exp-company {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 0.8rem;
-      color: #475569;
-      margin-bottom: 0.5rem;
-    }
-    .exp-desc {
-      font-size: 0.85rem;
-      color: #2c3e4e;
-      margin-top: 0.4rem;
-      padding-left: 0;
-      list-style-position: inside;
-    }
-    .exp-desc li {
-      margin-bottom: 0.3rem;
-    }
-
-    /* Agentic AI & Cloud special badge row */
-    .expertise-highlight {
-      background: linear-gradient(105deg, #f1f5f9 0%, #ffffff 100%);
+    .ai-cloud-highlight {
+      background: linear-gradient(95deg, #eef4ff, #ffffff);
       border-radius: 1.2rem;
-      padding: 1.2rem 1.5rem;
-      margin: 1.8rem 0 1.5rem;
+      padding: 1rem 1.8rem;
+      margin: 1.5rem 0 1.2rem;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
       gap: 1rem;
+      border: 1px solid #d9e6f7;
     }
-    .badge-ai {
+    .pill-agentic {
       background: #0b2b38;
-      color: #7dd3fc;
+      color: #bbf0ff;
       border-radius: 60px;
-      padding: 0.5rem 1rem;
+      padding: 0.4rem 1.2rem;
+      font-size: 0.75rem;
       font-weight: 600;
-      font-size: 0.8rem;
       display: inline-flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
     }
-    .badge-k8s {
-      background: #1e293b;
-      color: #facc15;
+    .timeline-premium {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      margin: 1rem 0 1.5rem;
     }
-
-    @media (max-width: 880px) {
-      .grid-architect {
+    .exp-card {
+      border-left: 3px solid #38bdf8;
+      padding-left: 1.2rem;
+    }
+    .exp-date {
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: #0284c7;
+      text-transform: uppercase;
+    }
+    .exp-title {
+      font-weight: 800;
+      font-size: 1rem;
+      margin: 0.2rem 0 0.1rem;
+    }
+    .exp-company {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.75rem;
+      color: #475569;
+      margin-bottom: 0.5rem;
+    }
+    .exp-desc-list {
+      font-size: 0.85rem;
+      padding-left: 1rem;
+      color: #1e2f3e;
+    }
+    .exp-desc-list li {
+      margin-bottom: 0.3rem;
+    }
+    hr.divider-light {
+      margin: 1rem 0;
+      border: 0;
+      height: 1px;
+      background: #e9edf2;
+    }
+    .footer-ast-note {
+      font-size: 0.7rem;
+      text-align: center;
+      margin-top: 1.8rem;
+      padding-top: 1rem;
+      color: #4b6b8f;
+      border-top: 1px solid #ecf3fa;
+    }
+    @media (max-width: 900px) {
+      .architect-layout {
         grid-template-columns: 1fr;
       }
-      .sidebar-dark {
+      .premium-sidebar {
         border-right: none;
         border-bottom: 1px solid #2d3a4e;
       }
       body {
         padding: 1rem;
       }
-      .main-content {
+      .premium-main {
         padding: 1.5rem;
       }
     }
@@ -308,219 +294,198 @@ Here is an HTML document that redesigns the test automation architect profile wi
         background: white;
         padding: 0;
       }
-      .sidebar-dark {
+      .premium-sidebar {
         background: #0f172a !important;
         -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
       }
     }
-    hr {
-      margin: 1rem 0;
-      border: 0;
-      height: 1px;
-      background: #e2e8f0;
+    a {
+      color: #7dd3fc;
+      text-decoration: none;
     }
-    .footer-note {
-      font-size: 0.7rem;
-      text-align: center;
-      margin-top: 2rem;
-      color: #64748b;
-      border-top: 1px solid #eef2ff;
-      padding-top: 1rem;
+    a:hover {
+      color: white;
     }
   </style>
 </head>
 <body>
-<div class="profile-master">
-  <div class="grid-architect">
-    <!-- Sidebar : Senior Architect with Cloud & AI tags -->
-    <aside class="sidebar-dark">
-      <div class="avatar-frame">
-        <img class="avatar-img" src="./logo/profile.jpeg" alt="Jayaraju Metta" onerror="this.src='https://ui-avatars.com/api/?background=0D2B3E&color=fff&name=Jayaraju+Metta&size=140';">
-        <div class="name-xl">Jayaraju Metta</div>
-        <div class="badge-role">🔷 Principal Test Architect · Agentic AI & Cloud Native</div>
+<div class="premium-portfolio">
+  <div class="architect-layout">
+    <!-- SIDEBAR - enhanced with AI/Cloud tags -->
+    <aside class="premium-sidebar">
+      <div class="avatar-circle">
+        <img src="./logo/profile.jpeg" alt="Jayaraju Metta" onerror="this.src='https://ui-avatars.com/api/?background=0F172A&color=38BDF8&name=Jayaraju+Metta&size=140';">
+        <div class="display-name">JAYARAJU METTA</div>
+        <div class="architect-badge"><i class="fas fa-microchip"></i> Application Architect – Quality Engineering</div>
       </div>
-      <div class="info-block">
-        <h3><i class="far fa-address-card" style="margin-right: 6px;"></i> CONTACT</h3>
-        <div class="contact-item-side"><i class="fas fa-envelope"></i> jayaraju.metta@gmail.com</div>
-        <div class="contact-item-side"><i class="fas fa-phone-alt"></i> +91-9247924729</div>
-        <div class="contact-item-side"><i class="fab fa-linkedin"></i> linkedin.com/in/jayarajumetta</div>
-        <div class="contact-item-side"><i class="fas fa-map-marker-alt"></i> Hyderabad, India</div>
+      <div class="side-section">
+        <h4><i class="far fa-address-card"></i> CONTACT</h4>
+        <div class="contact-line"><i class="fas fa-envelope"></i> jayaraju.metta@gmail.com</div>
+        <div class="contact-line"><i class="fas fa-phone-alt"></i> +91-9247924729</div>
+        <div class="contact-line"><i class="fab fa-linkedin"></i> linkedin.com/in/jayarajumetta</div>
+        <div class="contact-line"><i class="fab fa-github"></i> github.com/jayarajumetta</div>
       </div>
-
-      <div class="skills-block">
-        <h3>⚡ CORE AI & CLOUD</h3>
-        <div class="skill-cloud">
-          <span class="skill-pill ai"><i class="fas fa-robot"></i> Agentic AI Automation</span>
-          <span class="skill-pill cloud"><i class="fab fa-docker"></i> Docker</span>
-          <span class="skill-pill cloud"><i class="fas fa-cubes"></i> Kubernetes</span>
-          <span class="skill-pill"><i class="fab fa-microsoft"></i> Azure DevOps</span>
-          <span class="skill-pill"><i class="fas fa-brain"></i> LLM-assisted Testing</span>
-          <span class="skill-pill ai">GenAI Test Gen</span>
-          <span class="skill-pill">Tricentis Tosca</span>
-          <span class="skill-pill">Selenium Grid + K8s</span>
-          <span class="skill-pill">Cypress</span>
-          <span class="skill-pill">RestAssured</span>
-          <span class="skill-pill">Python · Java · C#</span>
+      <div class="side-section">
+        <h4>⚡ AI + CLOUD NATIVE</h4>
+        <div class="skill-cluster">
+          <span class="skill-chip ai"><i class="fas fa-robot"></i> Agentic AI Automation</span>
+          <span class="skill-chip cloud"><i class="fab fa-docker"></i> Docker</span>
+          <span class="skill-chip cloud"><i class="fas fa-cubes"></i> Kubernetes</span>
+          <span class="skill-chip"><i class="fas fa-brain"></i> GenAI / LLM Test</span>
+          <span class="skill-chip">Azure DevOps</span>
+          <span class="skill-chip">Tricentis Tosca</span>
+          <span class="skill-chip">Playwright/Selenium</span>
+          <span class="skill-chip">Service Virtualization</span>
+          <span class="skill-chip">BDD · TDD</span>
         </div>
       </div>
-
-      <div class="skills-block">
-        <h3>📜 CERTIFICATIONS (AI/Cloud/Agile)</h3>
-        <div class="contact-item-side" style="font-size:0.8rem;"><i class="fas fa-certificate"></i> Professional Scrum Master™ I (PSM I)</div>
-        <div class="contact-item-side" style="font-size:0.8rem;"><i class="fas fa-cloud"></i> Tricentis Tosca Automation Specialist</div>
-        <div class="contact-item-side" style="font-size:0.8rem;"><i class="fas fa-code"></i> Postman API Fundamentals Expert</div>
-        <div class="contact-item-side" style="font-size:0.8rem;"><i class="fab fa-docker"></i> Docker & Kubernetes (Hands-on Architect)</div>
-        <div class="contact-item-side" style="font-size:0.8rem;"><i class="fas fa-graduation-cap"></i> AI/ML - IIT(ISM) Dhanbad (2025-26)</div>
+      <div class="side-section">
+        <h4>📜 TOP CERTIFICATIONS</h4>
+        <div class="contact-line" style="font-size:0.75rem"><i class="fas fa-certificate"></i> Professional Scrum Master™ I (PSM I)</div>
+        <div class="contact-line" style="font-size:0.75rem"><i class="fas fa-cloud"></i> Tricentis Tosca Specialist</div>
+        <div class="contact-line" style="font-size:0.75rem"><i class="fas fa-code"></i> Postman API Expert · BrowserStack</div>
+        <div class="contact-line" style="font-size:0.75rem"><i class="fas fa-graduation-cap"></i> AI & Data Science | IIT(ISM) Dhanbad</div>
       </div>
     </aside>
 
-    <!-- MAIN: AST responsibilities + highest impact -->
-    <main class="main-content">
-      <div class="hero-summary">
-        <p style="font-size: 0.95rem; font-weight: 500; margin-bottom: 0.5rem;">🚀 <strong>Test Automation Architect | AI-augmented QA | Cloud-Native Infra</strong></p>
-        <p style="font-size: 0.9rem; color: #1e293b;">12+ years delivering enterprise automation strategy, building <strong>Agentic AI</strong> validation frameworks, and orchestrating <strong>Docker/Kubernetes</strong> test pipelines. Proven architect driving quality at scale across 5 product lines, 30+ engineers, and CI/CD transformation. AST-driven leadership: <strong>Accountability, Strategy, Technical Excellence</strong>.</p>
+    <!-- MAIN : AST highest responsibilities + Agentic AI + Cloud (Docker/K8s) -->
+    <main class="premium-main">
+      <div class="hero-intro">
+        <p style="font-weight: 600; font-size: 0.9rem; margin-bottom: 0.5rem;">🏆 <strong>Strategic Application Architect – Quality Engineering</strong></p>
+        <p style="font-size: 0.9rem;">12+ years driving enterprise test transformation, <strong>Agentic AI test agents</strong>, and <strong>cloud-native quality engineering</strong> (Docker/Kubernetes). Architecting scalable test solutions that reduce regression time by 65% and embed AI-driven automation directly into CI/CD pipelines. AST-aligned leadership: <strong>Accountability for enterprise quality, Strategy for global CoE, Technical Excellence in AI & Cloud.</strong></p>
       </div>
 
-      <!-- AST RESPONSIBILITIES SECTION (Highest level) -->
-      <div class="section-header">
+      <!-- HIGHEST AST RESPONSIBILITIES section - matching architect level -->
+      <div class="section-icon-title">
         <i class="fas fa-chart-line"></i>
         <h2>Highest AST Responsibilities · Architect Impact</h2>
       </div>
-      <div class="ast-grid">
-        <div class="ast-card">
-          <div class="ast-icon"><i class="fas fa-robot"></i></div>
-          <div class="ast-title">Agentic AI Test Strategy</div>
-          <div class="ast-desc">Define enterprise-wide AI-native quality blueprint: autonomous test agents, LLM-based oracles, self-healing frameworks. Lead adoption of AI-driven test generation and predictive defect analytics.</div>
+      <div class="ast-premium-grid">
+        <div class="ast-premium-card">
+          <div class="ast-icon-large"><i class="fas fa-robot"></i></div>
+          <div class="ast-card-title">Agentic AI Test Orchestration</div>
+          <div style="font-size:0.8rem; color:#2c3e66">Lead enterprise adoption of autonomous AI agents for test generation, self-healing locators, and defect prediction. Define LLM-powered validation frameworks reducing maintenance by 45%.</div>
         </div>
-        <div class="ast-card">
-          <div class="ast-icon"><i class="fas fa-cloud-upload-alt"></i></div>
-          <div class="ast-title">Cloud-Native Automation (K8s/Docker)</div>
-          <div class="ast-desc">Architect and govern test execution on Kubernetes clusters, dynamic test environments with Docker containers, auto-scaling Selenium Grid on EKS/AKS, and robust canary testing pipelines.</div>
+        <div class="ast-premium-card">
+          <div class="ast-icon-large"><i class="fas fa-cloud-upload-alt"></i></div>
+          <div class="ast-card-title">Cloud-Native Automation (K8s/Docker)</div>
+          <div style="font-size:0.8rem; color:#2c3e66">Architect test execution on Kubernetes clusters, dynamic containerized environments, Selenium Grid on EKS/AKS, and service virtualization with Docker Compose. Drive cloud cost optimization.</div>
         </div>
-        <div class="ast-card">
-          <div class="ast-icon"><i class="fas fa-crown"></i></div>
-          <div class="ast-title">Quality CoE & Governance</div>
-          <div class="ast-desc">Establish global Center of Excellence, define quality SLIs/SLOs, drive test maturity assessments, and champion shift-left + DevSecOps metrics across 20+ squads.</div>
+        <div class="ast-premium-card">
+          <div class="ast-icon-large"><i class="fas fa-chalkboard-user"></i></div>
+          <div class="ast-card-title">Global Quality CoE & Governance</div>
+          <div style="font-size:0.8rem; color:#2c3e66">Establish Centers of Excellence, define AST-driven quality SLIs/SLOs, lead test maturity assessments, and embed shift-left + DevSecOps metrics across 20+ Agile squads.</div>
         </div>
-        <div class="ast-card">
-          <div class="ast-icon"><i class="fas fa-microchip"></i></div>
-          <div class="ast-title">AI + Cloud Innovation Roadmap</div>
-          <div class="ast-desc">Lead R&D for agentic AI testing (Auto-healing locators, anomaly detection). Spearhead integration of LLM-based test data synthesis and containerized performance validation.</div>
+        <div class="ast-premium-card">
+          <div class="ast-icon-large"><i class="fas fa-microchip"></i></div>
+          <div class="ast-card-title">AI + Cloud Innovation Roadmap</div>
+          <div style="font-size:0.8rem; color:#2c3e66">Pioneer GenAI-based test data synthesis, predictive defect analytics, and containerized performance engineering. Strategic technical authority for test modernization.</div>
         </div>
       </div>
 
-      <!-- AGENTIC AI & DOCKER K8S HIGHLIGHT: matching requested skills -->
-      <div class="expertise-highlight">
-        <div><i class="fas fa-brain" style="color: #0284c7;"></i> <strong>Agentic AI in Test</strong> — Autonomous agents for exploratory testing, self-correcting scripts, and AI-powered flaky test detection.</div>
-        <div><i class="fas fa-cubes"></i> <strong>Cloud Orchestration:</strong> Docker + Kubernetes (EKS) · Helm charts · K8s job scheduling for parallel test execution</div>
-        <div><i class="fas fa-chart-simple"></i> <strong>AST Alignment:</strong> Accountability for test infra, Strategic QA transformation, Technical authority in AI/Cloud.</div>
+      <!-- Agentic AI + DOCKER / KUBERNETES explicit highlight -->
+      <div class="ai-cloud-highlight">
+        <div><i class="fas fa-brain" style="color:#0284c7"></i> <strong>Agentic AI Skills in Production:</strong> LLM-powered test copilot, anomaly detection, auto-healing scripts, and intelligent test suite optimization.</div>
+        <div><i class="fas fa-cubes"></i> <strong>Cloud Orchestration:</strong> Kubernetes (K8s) + Docker · Helm Charts · K8s CronJobs for parallel regression · Service mesh testing · Azure/AWS integration.</div>
+        <div><span class="pill-agentic"><i class="fas fa-chart-simple"></i> AST Alignment: Accountability · Strategy · Technical Excellence</span></div>
       </div>
 
-      <!-- WORK EXPERIENCE with recent roles showing AI & cloud responsibilities -->
-      <div class="section-header">
+      <!-- WORK EXPERIENCE (latest resume content integrated) -->
+      <div class="section-icon-title">
         <i class="fas fa-briefcase"></i>
-        <h2>Relevant Leadership & Cloud/AI Engagements</h2>
+        <h2>Architect-Level Experience · AI & Cloud Leadership</h2>
       </div>
-      <div class="timeline-v2">
-        <div class="exp-entry">
-          <div class="exp-date">July 2024 – Present</div>
-          <div class="exp-title">Heading QA (Architect) · Innovapptive</div>
+      <div class="timeline-premium">
+        <div class="exp-card">
+          <div class="exp-date">Jul 2024 – Present</div>
+          <div class="exp-title">Application Architect (Quality Engineering) – Innovapptive</div>
           <div class="exp-company"><i class="fas fa-building"></i> Hyderabad, India</div>
-          <ul class="exp-desc">
-            <li>Established Agentic AI pilot: LLM-based visual validation and semantic test maintenance, reducing flakiness by 35%.</li>
-            <li>Architected containerized test harness using Docker & Kubernetes (Azure AKS) for parallel UI/API regression, cutting execution time by 60%.</li>
-            <li>Own enterprise test automation vision covering 5 products, defined AST-driven KPIs and ROI models for cloud-native testing.</li>
+          <ul class="exp-desc-list">
+            <li>Designed scalable test solutions for 5 SAP-driven enterprise apps, integrating AI-driven automation & containerized test execution → reduced regression time by <strong>65%</strong>.</li>
+            <li>Implemented cloud-native automation with Docker & Kubernetes, proxy-based service virtualization for environment decoupling.</li>
+            <li>Engineered DevOps-based test integration via Azure DevOps/Jenkins, enabling continuous testing.</li>
           </ul>
         </div>
-        <div class="exp-entry">
-          <div class="exp-date">Oct 2023 – June 2024</div>
-          <div class="exp-title">Sr Principal Software Architect · ideyalabs</div>
+        <div class="exp-card">
+          <div class="exp-date">Oct 2023 – Jun 2024</div>
+          <div class="exp-title">Sr. Principal Architect (Quality Engineering CoE) – ideyalabs</div>
           <div class="exp-company"><i class="fas fa-microchip"></i> Hyderabad</div>
-          <ul class="exp-desc">
-            <li>Launched ILATF: Low-code AI-assisted automation framework, integrated vector search for test data generation.</li>
-            <li>Built Kubernetes-based test execution environment for mining & tax simulation platforms, reducing test infra costs by 40%.</li>
-            <li>Led CoE of 30+ engineers, embedding Docker-first strategy for all automation pipelines.</li>
+          <ul class="exp-desc-list">
+            <li><strong>Architected ILATF</strong> – GenAI & Low-Code automation framework, leveraging LLMs to accelerate script generation by 50%.</li>
+            <li>Championed BDD/TDD across Agile teams, standardized business-readable testing for financial platforms.</li>
+            <li>Directed 30-member QA org, optimized environment management and defect leakage pipelines.</li>
           </ul>
         </div>
-        <div class="exp-entry">
-          <div class="exp-date">Jan 2019 – Sept 2023</div>
-          <div class="exp-title">Test Automation Architect · ZenQ</div>
-          <div class="exp-company"><i class="fas fa-chart-network"></i> Hyderabad</div>
-          <ul class="exp-desc">
-            <li>Designed AI-enhanced test selection models using ML classification (Random Forest) for smoke suits.</li>
-            <li>Implemented CI/CD orchestration on Azure DevOps with Docker Compose, integrated SonarQube & Selenium Grid on K8s.</li>
-            <li>Standardized test containerization and helm charts for multi-environment deployments.</li>
+        <div class="exp-card">
+          <div class="exp-date">Jan 2019 – Sep 2023</div>
+          <div class="exp-title">Architect (QA & Validation) – ZenQ</div>
+          <div class="exp-company"><i class="fas fa-chart-line"></i> Hyderabad</div>
+          <ul class="exp-desc-list">
+            <li>Designed TDD-aligned automation architectures for digital banking & Smart Grid IoT on Azure/AWS.</li>
+            <li>Built containerized test environment provisioning (Docker + K8s) ensuring security compliance.</li>
           </ul>
         </div>
       </div>
 
-      <!-- Key Projects with AI / Cloud Highlight -->
-      <div class="section-header" style="margin-top: 1rem;">
+      <!-- KEY PROJECT: QAira – AI-Driven platform + cloud native -->
+      <div class="section-icon-title">
         <i class="fas fa-rocket"></i>
-        <h2>Agentic AI & Cloud-Native Deliverables</h2>
+        <h2>AI-Driven Platform · QAira & Cloud Innovations</h2>
       </div>
-      <div class="ast-grid" style="margin-bottom: 0.5rem;">
-        <div class="ast-card">
-          <div class="ast-icon"><i class="fab fa-kubernetes"></i></div>
-          <div class="ast-title">K8s Test Orchestrator</div>
-          <div class="ast-desc">Designed Kubernetes operators to spin ephemeral test environments using Docker-in-Docker, integrated with ArgoCD for automatic validation on every PR.</div>
+      <div class="ast-premium-grid" style="margin-bottom: 0.8rem;">
+        <div class="ast-premium-card">
+          <div class="ast-icon-large"><i class="fas fa-cloud-upload-alt"></i></div>
+          <div class="ast-card-title">QAira – AI-Native QA Platform</div>
+          <div style="font-size:0.8rem;">Cloud-based SaaS leveraging ML for predictive defect analysis, autonomous test environment orchestration, and deep CI/CD integration. Built on Kubernetes + AI agents.</div>
         </div>
-        <div class="ast-card">
-          <div class="ast-icon"><i class="fas fa-robot"></i></div>
-          <div class="ast-title">Agentic Test Copilot (POC)</div>
-          <div class="ast-desc">LLM-powered agent generating test scripts from user stories + auto-healing locators; reduced maintenance effort by 50% in Selenium/Playwright suites.</div>
+        <div class="ast-premium-card">
+          <div class="ast-icon-large"><i class="fab fa-kubernetes"></i></div>
+          <div class="ast-card-title">K8s Test Orchestrator</div>
+          <div style="font-size:0.8rem;">Dynamic test pods with ephemeral databases, integrated with ArgoCD and Helm – reduced test setup time by 70%.</div>
         </div>
-        <div class="ast-card">
-          <div class="ast-icon"><i class="fab fa-docker"></i></div>
-          <div class="ast-title">Containerized Performance Lab</div>
-          <div class="ast-desc">JMeter + K6 orchestrated via Docker Swarm & Kubernetes, enabling massive parallel load testing across cloud regions, integrated with Prometheus+Grafana.</div>
+        <div class="ast-premium-card">
+          <div class="ast-icon-large"><i class="fas fa-robot"></i></div>
+          <div class="ast-card-title">Agentic Test Copilot (GenAI)</div>
+          <div style="font-size:0.8rem;">LLM-powered script generation + self-healing locators, accelerating test creation and reducing flaky tests by 40%.</div>
         </div>
       </div>
 
-      <!-- Certifications + Education quick -->
-      <hr>
-      <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem; margin-top: 0.8rem;">
+      <hr class="divider-light">
+      <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-top: 0.5rem;">
         <div>
-          <h3 style="font-size: 1rem; font-weight: 700;"><i class="fas fa-graduation-cap"></i>  Education & AI Specialization</h3>
-          <ul style="font-size: 0.85rem; margin-top: 6px; list-style: none;">
-            <li>🎓 AI & Machine Learning | IIT (ISM) Dhanbad (2025-26)</li>
-            <li>📘 MBA (Marketing) | Andhra University</li>
-            <li>📡 B.Tech ECE | JNTU, Hyderabad</li>
+          <h3 style="font-size: 0.9rem; font-weight: 800;"><i class="fas fa-graduation-cap"></i> Education</h3>
+          <ul style="font-size: 0.8rem; list-style: none;">
+            <li>🎓 MBA – Marketing (Andhra University) 2025</li>
+            <li>🤖 Mastering AI & Data Science | IIT (ISM) Dhanbad 2026</li>
+            <li>📡 B.Tech ECE | JNTU</li>
           </ul>
         </div>
         <div>
-          <h3 style="font-size: 1rem; font-weight: 700;"><i class="fas fa-trophy"></i>  Key Badges & Training</h3>
-          <ul style="font-size: 0.85rem; list-style: none;">
-            <li>✅ Professional Scrum Master™ I (PSM I)</li>
-            <li>✅ Tricentis Tosca Automation Specialist</li>
-            <li>✅ BrowserStack Automation Expert</li>
-            <li>✅ Oracle Java Explorer | Postman Expert</li>
+          <h3 style="font-size: 0.9rem; font-weight: 800;"><i class="fas fa-award"></i> Core Methodologies</h3>
+          <ul style="font-size: 0.8rem; list-style: none;">
+            <li>✅ BDD · TDD · Shift-Left</li>
+            <li>✅ Service Virtualization · Model-Based Testing</li>
+            <li>✅ DevOps-Based Test Integration (Azure/Jenkins)</li>
           </ul>
         </div>
       </div>
-      <div class="footer-note">
-        <i class="fas fa-chart-pie"></i> AST Alignment: Highest accountability in <strong>Agentic AI R&D, Kubernetes test orchestration, enterprise automation architecture</strong> – delivering 10x faster feedback cycles & cloud-scale quality.
+      <div class="footer-ast-note">
+        <i class="fas fa-chart-pie"></i> <strong>AST ARCHITECT SUMMARY</strong> – Highest accountability for <strong>Agentic AI Strategy, Kubernetes-native test infrastructure, and Enterprise Quality Transformation</strong>. Delivering 10x faster feedback loops, cloud-scale test execution, and measurable business impact.
       </div>
     </main>
   </div>
 </div>
 
 <script>
-  // smooth interaction to show dynamic tooltip (senior recruiter UX)
-  document.querySelectorAll('.ast-card, .skill-pill').forEach(el => {
-    el.addEventListener('mouseenter', function(e) {
-      if(this.classList.contains('skill-pill') && this.innerText.includes('Kubernetes')) {
-        this.style.transform = 'scale(1.03)';
-        this.style.transition = '0.1s';
-      }
+  // subtle recruiter-ready interaction : hover elevate
+  document.querySelectorAll('.ast-premium-card, .skill-chip').forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      if(el.classList.contains('skill-chip')) el.style.transform = 'scale(1.02)';
     });
-    el.addEventListener('mouseleave', function() {
-      this.style.transform = '';
+    el.addEventListener('mouseleave', () => {
+      el.style.transform = '';
     });
   });
-  // console note: professional UI with highest AST responsibilities matched
 </script>
 </body>
 </html>
-```
