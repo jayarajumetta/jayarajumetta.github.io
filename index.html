@@ -23,7 +23,6 @@
       padding: 2rem 1.5rem;
     }
 
-    /* main container */
     .resume-ultimate {
       max-width: 1320px;
       margin: 0 auto;
@@ -34,18 +33,16 @@
       transition: all 0.2s;
     }
 
-    /* two column layout */
     .ultimate-grid {
       display: grid;
       grid-template-columns: 320px 1fr;
     }
 
-    /* ========= SIDEBAR (premium dark) ========= */
+    /* ========= SIDEBAR ========= */
     .sidebar-premium {
       background: #0f172a;
       color: #e2e8f0;
       padding: 2rem 1.6rem;
-      position: relative;
       border-right: 1px solid #1e2a3e;
     }
 
@@ -60,7 +57,6 @@
       border-radius: 50%;
       border: 3px solid #3b82f6;
       box-shadow: 0 12px 24px -10px rgba(0, 0, 0, 0.4);
-      transition: transform 0.2s;
     }
     .fullname-glow {
       font-size: 1.7rem;
@@ -109,7 +105,6 @@
       color: #3b82f6;
     }
 
-    /* skills pills – consistent font with main content */
     .skills-pills {
       display: flex;
       flex-wrap: wrap;
@@ -125,7 +120,6 @@
       font-family: 'Inter', monospace;
       color: #b9e6ff;
       border: 1px solid #334155;
-      transition: 0.1s;
     }
     .pill-skill.primary-automation {
       background: #0b2b38;
@@ -138,7 +132,7 @@
       border-color: #38bdf8;
     }
 
-    /* ========= MAIN CONTENT (consistent font) ========= */
+    /* ========= MAIN CONTENT ========= */
     .main-content-premium {
       background: #ffffff;
       padding: 2rem 2.2rem;
@@ -150,7 +144,6 @@
       padding: 1.5rem 1.8rem;
       margin-bottom: 2rem;
       border: 1px solid #eef2ff;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
     }
 
     .section-header-clean {
@@ -172,7 +165,6 @@
       color: #0c4a6e;
     }
 
-    /* metrics */
     .metrics-row {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -184,7 +176,6 @@
       border-radius: 1rem;
       padding: 0.9rem;
       border: 1px solid #e9edf2;
-      box-shadow: 0 1px 2px rgba(0,0,0,0.02);
     }
     .metric-number {
       font-size: 1.7rem;
@@ -197,7 +188,6 @@
       color: #4b5563;
     }
 
-    /* experience items */
     .exp-item-modern {
       border-left: 3px solid #3b82f6;
       padding-left: 1.2rem;
@@ -231,7 +221,6 @@
       margin-bottom: 0.4rem;
     }
 
-    /* project cards (interesting QA automation projects) */
     .project-grid-ultimate {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -315,11 +304,7 @@
         background: #0f172a !important;
         -webkit-print-color-adjust: exact;
       }
-      .project-card-ultimate:hover {
-        transform: none;
-      }
     }
-
     a {
       color: #93c5fd;
       text-decoration: none;
@@ -329,7 +314,7 @@
 <body>
 <div class="resume-ultimate">
   <div class="ultimate-grid">
-    <!-- Sidebar: consistent fonts & skills -->
+    <!-- SIDEBAR -->
     <aside class="sidebar-premium">
       <div class="avatar-section">
         <img class="avatar-img" src="./logo/profile.jpeg" alt="Jayaraju Metta" onerror="this.src='https://ui-avatars.com/api/?background=0F172A&color=3B82F6&name=Jayaraju+Metta&size=140';">
@@ -378,14 +363,14 @@
       </div>
     </aside>
 
-    <!-- MAIN CONTENT: Impact, experience, projects -->
+    <!-- MAIN CONTENT -->
     <main class="main-content-premium">
       <div class="summary-card">
         <p style="font-weight: 700; font-size: 0.95rem; margin-bottom: 0.4rem;">🔷 <strong>PSM Certified Agile Leader & Test Automation Architect</strong> (13+ years SDLC)</p>
         <p style="font-size: 0.9rem;">Architecting <strong>enterprise automation workflows</strong> fueled by Generative AI (RAG, LLMs) and cloud-native infrastructure. Expert Python/C# developer building AI/ML pipelines for intelligent testing. Delivered 40% efficiency gain, 30% faster releases, and containerized parallel test execution. Known for bridging complex business systems with modern automation, driving quality at scale.</p>
       </div>
 
-      <!-- Measurable outcomes (recruiter magnets) -->
+      <!-- Metrics -->
       <div class="metrics-row">
         <div class="metric-card-modern"><div class="metric-number">40%</div><div class="metric-label">↑ architectural efficiency (AI automation)</div></div>
         <div class="metric-card-modern"><div class="metric-number">30%</div><div class="metric-label">faster time-to-market (ideyalabs)</div></div>
@@ -393,7 +378,7 @@
         <div class="metric-card-modern"><div class="metric-number">13+</div><div class="metric-label">years automation & architecture leadership</div></div>
       </div>
 
-      <!-- Experience -->
+      <!-- Experience (including Capgemini & Spectrum) -->
       <div class="section-header-clean">
         <i class="fas fa-briefcase"></i>
         <h2>Architect-Level Experience</h2>
@@ -441,7 +426,28 @@
         </ul>
       </div>
 
-      <!-- Interesting QA Automation Projects -->
+      <!-- Additional entries: Capgemini and Spectrum -->
+      <div class="exp-item-modern">
+        <div class="exp-date">Apr 2014 – Jul 2016</div>
+        <div class="exp-title">Senior Validation Engineer</div>
+        <div class="exp-company"><i class="fas fa-shield-alt"></i> Capgemini – Hyderabad</div>
+        <ul class="exp-list">
+          <li><strong>UK Insurance Automation:</strong> Designed and executed complex automation workflows for a leading UK Health and Life Insurance provider, integrating heavily with existing business workflows.</li>
+          <li>Increased test coverage by 40% through strategic automation of critical insurance policy lifecycle processes.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item-modern">
+        <div class="exp-date">Jul 2013 – Apr 2014</div>
+        <div class="exp-title">Graduate Engineer Trainee</div>
+        <div class="exp-company"><i class="fas fa-tower-cell"></i> Spectrum Telesolutions Pvt. Ltd. – Hyderabad</div>
+        <ul class="exp-list">
+          <li>Applied standard methods and techniques to analyze, design, and maintain robust telecommunication systems.</li>
+          <li>Performed system upgrades and resolved technical issues to ensure high network availability.</li>
+        </ul>
+      </div>
+
+      <!-- Flagship QA Automation Projects -->
       <div class="section-header-clean">
         <i class="fas fa-flask"></i>
         <h2>Flagship QA Automation & AI Projects</h2>
